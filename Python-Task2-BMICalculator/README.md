@@ -1,4 +1,4 @@
-# BMI Calculator 🧮
+# BMI Calculator
 
 ## 📖 Project Overview
 This project is an **BMI Calculator** built with Python.  

@@ -3,7 +3,7 @@ from tkinter import messagebox, ttk
 import sqlite3
 import matplotlib.pyplot as plt
 
-# ---------------- Database Setup ----------------
+# Database Setup
 conn = sqlite3.connect("bmi_records.db")
 cursor = conn.cursor()
 cursor.execute("""
@@ -17,7 +17,7 @@ cursor.execute("""
 """)
 conn.commit()
 
-# ---------------- Helper Functions ----------------
+# Helper Functions 
 def convert_weight(value, unit):
     if unit == "kg":
         return value
@@ -36,7 +36,7 @@ def convert_height(value1, value2, unit):
     else:
         raise ValueError("Invalid height unit")
 
-# ---------------- BMI Calculation ----------------
+# BMI Calculation
 def calculate_bmi():
     try:
         user = entry_user.get().strip()
@@ -76,7 +76,7 @@ def calculate_bmi():
     except ValueError:
         messagebox.showerror("Error", "Please enter numeric values only.")
 
-# ---------------- Show Trend ----------------
+# Show Trend 
 def show_trend():
     user = entry_user.get().strip()
     if not user:
@@ -100,7 +100,7 @@ def show_trend():
     else:
         messagebox.showinfo("Info", "No records found for this user.")
 
-# ---------------- GUI Setup ----------------
+# GUI Setup
 root = tk.Tk()
 root.title("Advanced BMI Calculator")
 root.geometry("520x350")
