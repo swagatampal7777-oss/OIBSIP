@@ -21,7 +21,7 @@ The app also supports **automatic location detection**, displays **weather icons
 
 ## Dependencies
 Install the required libraries:
-```bash
+
     pip install requests pillow
 
 ## How to Run
