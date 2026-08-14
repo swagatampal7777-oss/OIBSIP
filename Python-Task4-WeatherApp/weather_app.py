@@ -4,10 +4,10 @@ from tkinter import messagebox
 from PIL import Image, ImageTk
 import io
 
-# ---------------- API Keys ----------------
+# API Key
 API_KEY = "66f3ca24dfc518d8f56c22413498d537"
 
-# ---------------- Helper Functions ----------------
+# Helper Functions
 def get_location():
     """Detect user's city using IP address via ipinfo.io"""
     try:
@@ -25,7 +25,7 @@ def get_weather():
             messagebox.showerror("Error", "Please enter a city name.")
             return
 
-    unit = unit_var.get()  # metric or imperial
+    unit = unit_var.get()  
     url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={API_KEY}&units={unit}"
 
     try:
@@ -97,12 +97,12 @@ def get_forecast(city, unit):
     except Exception as e:
         messagebox.showerror("Error", f"Unable to fetch forecast data.\n{e}")
 
-# ---------------- GUI Setup ----------------
+# GUI Setup
 root = tk.Tk()
 root.title("Advanced Weather App")
 root.geometry("500x600")
 
-# 🌤️ Highlighted Heading
+# Heading
 tk.Label(root, text="🌤️ WEATHER FORECAST 🌤️", font=("Segoe UI", 20, "bold"), fg="#00bfff").pack(pady=10)
 
 # City input
