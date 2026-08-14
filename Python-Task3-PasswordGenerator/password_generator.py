@@ -3,7 +3,7 @@ import string
 import tkinter as tk
 from tkinter import messagebox
 
-# ---------------- Password Generator Function ----------------
+# Password Generator Function
 def generate_password():
     try:
         length = int(length_var.get())  # get selected length from dropdown
@@ -41,7 +41,7 @@ def generate_password():
     except ValueError:
         messagebox.showerror("Error", "Please select a valid length.")
 
-# ---------------- Strength Checker ----------------
+# Strength Checker
 def check_strength(password):
     length = len(password)
     has_upper = any(c.isupper() for c in password)
@@ -58,7 +58,7 @@ def check_strength(password):
     else:
         return ("Strong", "green")
 
-# ---------------- Copy to Clipboard ----------------
+# Copy to Clipboard
 def copy_password():
     password = entry_result.get()
     if password:
@@ -66,7 +66,7 @@ def copy_password():
         root.clipboard_append(password)
         messagebox.showinfo("Copied", "Password copied to clipboard!")
 
-# ---------------- GUI Setup ----------------
+# GUI Setup
 root = tk.Tk()
 root.title("Secure Password Generator")
 root.geometry("420x250")
