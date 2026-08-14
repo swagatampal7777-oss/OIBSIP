@@ -1,4 +1,4 @@
-# 🌤️ Advanced Weather Forecast App
+# 🌤️ Weather Forecast App
 
 ## 📖 Project Overview
 This project is a **Weather Forecast Application** built with Python, Tkinter, and the OpenWeatherMap API.  
