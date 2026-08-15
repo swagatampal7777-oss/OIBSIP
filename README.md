@@ -5,15 +5,15 @@ This repository contains the Python projects developed during the **Oasis Infoby
 Each project demonstrates practical applications of Python programming, GUI development, API integration, and database handling.  
 
 Projects included:
-1. ⚖️ **Advanced BMI Calculator**
-2. 🔐 **Secure Random Password Generator**
-3. 🌤️ **Weather Forecast App**
+1. ⚖️ **BMI Calculator**
+2. 🔐 **Random Password Generator**
+3. 🌤️ **Basic Weather App**
 
 ---
 
 ## ✨ Projects
 
-### 1. ⚖️ Advanced BMI Calculator
+### 1. ⚖️ BMI Calculator
 - Calculates Body Mass Index (BMI) with multiple unit support (kg/lbs, m/cm/ft+in).
 - Categorizes BMI into Underweight, Normal, Overweight, Obese.
 - Stores records in a local SQLite database (`bmi_records.db`).
@@ -25,7 +25,7 @@ Projects included:
     python bmi_calculator.py
 ```
 
-### 2. 🔐 Secure Random Password Generator
+### 2. 🔐 Random Password Generator
 - Generates strong random passwords with letters, digits, and symbols
 - Minimum length validation (default: 8 characters).
 - Advanced version includes GUI, clipboard copy, and secure random generation.
@@ -36,7 +36,7 @@ Projects included:
     python password_generator.py
 ```
 
-### 3. 🌤️ Weather Forecast App
+### 3. 🌤️ Basic Weather App
 - Fetches real-time weather data using the OpenWeatherMap API.
 - Displays temperature, humidity, condition, and weather icons.
 - Provides hourly forecast (next 6 hours) and daily forecast (next 5 days).
