@@ -91,3 +91,6 @@ OIBSIP/
 - Enhance password generator with strength meter.
 - Improve Weather App UI with modern themes.
 - Package projects into standalone executables.
+
+## 👨‍💻 Author
+Developed by **Swagatam** as part of the **Oasis Infobyte Internship (Python Programming Track)**.
