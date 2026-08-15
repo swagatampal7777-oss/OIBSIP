@@ -1,15 +1,15 @@
-# Random Password Generator
+# 🔐 Random Password Generator
 
 ## 📖 Project Overview
 This project is a **Secure Random Password Generator** built with Python and Tkinter.  
 Unlike traditional generators that use the `random` module, this project uses Python’s **`secrets`** module, which provides **cryptographically secure randomness**.  
 It ensures that generated passwords are unpredictable and safe for real-world use.
 
-### Key Features
-- Select password length from a dropdown menu (6–20 characters).
+### ✨ Key Features
+- 📏 Select password length from a dropdown menu (6–20 characters).
 - Generates passwords with letters, digits, and symbols.
 - Ensures at least one uppercase, lowercase, digit, and symbol.
-- Rates password strength:
+- 📋 Rates password strength:
   - **Easy / Risky** → Red text
   - **Medium** → Orange text
   - **Strong** → Green text
@@ -18,7 +18,7 @@ It ensures that generated passwords are unpredictable and safe for real-world us
 
 ---
 
-##  Dependencies
+## ⚙️ Dependencies
 This project uses only built-in Python libraries:
 - **secrets** → cryptographically secure random generator  
 - **string** → character sets (letters, digits, symbols)  
@@ -27,16 +27,16 @@ This project uses only built-in Python libraries:
 
 ---
 
-##  How to Run on Your System
+## 🚀 How to Run
 1. Clone the repository:
-   
+```bash
    git clone https://github.com/<your-username>/OIBSIP.git
    cd OIBSIP/Python-Task3-PasswordGenerator
-
+```
 2. Run the program:
-
+```bash
     python password_generator.py
-
+```
 3. Steps in the GUI:
 
     ~ Select desired password length from dropdown.
@@ -50,15 +50,27 @@ This project uses only built-in Python libraries:
     ~ Click Copy to Clipboard to copy password.
 
 ## Expected Output
+```code
     Example generated password:
         A7!bX9@qLm
 
     Strength indicator:
         Strong (Green)
-
-## Project Structure
-
+```
+## 🗂️ Project Structure
+```code
     Python-Task3-PasswordGenerator/
         │── password_generator.py   # Main Python script (uses secrets)
         │── README.md               # Project documentation
+```
 
+## 🎯 Learning Outcomes
+- Strengthened Git/GitHub workflow skills.
+- Learned basics of password generation logic.
+- Took reference from Copilot for Tkinter GUI and clipboard handling.
+- Gained confidence in managing beginner Python projects.
+
+## 📌 Future Improvements
+- Add password strength meter.
+- Allow user customization (symbols, length, character sets).
+- Save generated passwords securely.
